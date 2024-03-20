@@ -1,0 +1,34 @@
+:host{
+    main{
+        background-image: url('/assets/bg_movies.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        font-family: "KoHo", system-ui;
+        h1{
+            text-align: center;
+            margin: 40px 0;
+            font-family: "Jolly Lodger", system-ui;
+            
+            color: var(--color-contrast-warm);
+            strong{
+                line-height: 120%;
+                text-shadow: 0 0 20px rgb(0 0 0 / 83%);
+                letter-spacing: 4px;
+                font-size: 96px;
+                span{
+                    font-size: 136px;
+                }
+            } 
+            span:nth-child(3){
+                font-size: 18px;
+                font-family: "KoHo", system-ui;
+                line-height: 20px;
+                margin-top: 0;
+                display: block;
+                color: white;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<div>
+    <input type="search" [(ngModel)]="searchQuery" (keyup)="onSearch()"  (ngModelChange)="clearFilter($event)" placeholder="Buscar películas">
+    <img src="/assets/search_btn.svg" alt="">
+</div>

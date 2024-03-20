@@ -1,0 +1,8 @@
+<section class="container">
+    <section>
+        <app-select-genre [genres]="genres" (SelectGenresChange)="onSelectGenresChange($event)"></app-select-genre>
+        <div></div>
+        <app-search-movies [movies]="movies" (filteredMoviesChange)="onFilteredMoviesChange($event)"></app-search-movies>
+    </section>
+    
+</section>

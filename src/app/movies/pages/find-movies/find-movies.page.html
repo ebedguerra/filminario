@@ -1,0 +1,25 @@
+<main>
+    <h1>
+        <strong>
+            <span>F</span>ilminario
+        </strong> <br>
+        <span>Find all the movies in one place</span>
+    </h1>
+    <app-filter-movies *ngIf="dataExist"
+    [movies]="moviesList"
+    [genres]="genresList"
+    (filteredMoviesList)="onFilteredMoviesList($event)"
+    ></app-filter-movies>
+
+    <ng-container
+        *ngIf="dataExist; then listMovies; else errorGet"
+        ></ng-container>
+    <ng-template #listMovies>
+        <app-list-movies [dataMovies]="moviesList"></app-list-movies>
+    </ng-template>
+    <ng-template #errorGet>
+        <section>
+            No se pudo cargar la lista de películas
+        </section>
+    </ng-template>
+</main>

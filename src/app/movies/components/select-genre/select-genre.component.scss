@@ -1,0 +1,36 @@
+:host ::ng-deep{
+    .multiselect-dropdown{
+        width: 280px !important;
+        .dropdown-btn{
+            padding: 14px 10px !important;
+            border:none !important;
+            box-sizing: border-box;
+
+            .dropdown-multiselect__caret{
+                padding: 0 !important;
+                height: 49px !important;
+                &:before{
+                    border-color: var(--color-contrast-cold) transparent !important;
+                }
+            }
+
+            .selected-item{
+                background: var(--color-contrast-cold) !important;
+                border-radius: 9px !important;
+                padding: 0 7px !important;
+            }
+            
+        }
+        .multiselect-item-checkbox{
+            > div:before{
+                
+                border: 2px solid  var(--color-contrast-cold) !important; 
+            }
+            >input:checked + div:before{
+                background: var(--color-contrast-cold) !important;
+                border: 2px solid  var(--color-contrast-cold) !important; 
+            }
+        }
+        
+    }
+}

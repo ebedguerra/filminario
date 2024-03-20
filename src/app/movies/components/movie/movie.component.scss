@@ -1,0 +1,46 @@
+:host{
+    article{
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background-color: var(--color-main);
+        margin-bottom: 16px;
+        box-shadow: 4px 5px 11px 0px #060110c4;
+       section{
+        display: flex;        
+        &.title{
+            border-radius: 20px 0  0 20px;
+            background-color: #0d0028;
+            color: var(--color-contrast-medium);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > h2{
+                font-size: 1rem;
+                margin: 0;
+                width: 140px;
+                text-align: center;
+            }
+        }
+        &.datos{
+            display: flex;
+            flex-direction: column;
+            padding: 18px;
+            color: var(--color-text);
+            p{
+                margin: 0 0 14px 0;
+            }
+            div > span{
+                background-color: #0d0028;
+                color: var(--color-contrast-warm);
+                padding: 6px 12px;
+                border-radius: 10px;
+                font-size: .8rem;
+            }
+        }
+       }
+
+    }
+}
